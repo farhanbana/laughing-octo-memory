@@ -1,9 +1,5 @@
-## Welcome to GitHub Pages
+## Welcome to Farhan Pages
 
-<!-------------------Index------------------->
-
-<!DOCTYPE html>
-<html lang="en">
 
 You can use the [editor on GitHub](https://github.com/farhanbana/laughing-octo-memory/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
