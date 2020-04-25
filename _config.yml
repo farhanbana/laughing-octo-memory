@@ -1,3 +1,158 @@
-theme: jekyll-theme-cayman
-**title: Hi, I'm Farhan!**
-description: Student at EVMS, Program intern at AgileMD
+<!-------------------Index------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-------------------Head------------------->
+    <head id="top">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161539766-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-161539766-1');
+        </script>
+
+        <meta charset="UTF-8">
+        <title>Jessica Prague</title>
+        <meta name="Description" content="Jessica Prague">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-------------------Linking CSS------------------->
+        <link rel="stylesheet" href="styles/all.css" type="text/css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <!-------------------Icons------------------->
+        <link rel="icon" type="image/x-icon" href="jp-favicon.ico"/>
+
+
+        <!-------------------Javascript------------------->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/parallax.min.js"></script>
+        <script>
+            /* Scroll button appears on scroll */
+            $(window).scroll(function(){
+                if ($(this).scrollTop() > 20) {
+                    $('.scroll-to-top').removeClass('no-display');
+                } else {
+                    $('.scroll-to-top').addClass('no-display');
+                }
+            });
+            /* Smooth Scrolling */
+            $(document).ready(function(){
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 500, function(){
+                            window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <!-------------------Navigation------------------->
+        <header class="header">
+            <h5 class="jp"><a href="index.html">Jessica Prague</a></h5>
+            <ul class="main-nav">
+                <li><a href="#work" class="active">Work</a></li>
+                <li><a href="about.html">My Story</a></li>
+                <li><a href="Jessica_Prague_Resume.pdf" target="_blank">Resume</a></li>
+            </ul>
+        </header> 
+
+        <!-------------------Parallax Effect------------------->
+        <div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="images/frontPage.png">
+            <div  class="paratext">  
+                <h1 data-aos="fade-down" class="para1">Hi, I'm Jesse!</h1>
+                <h3 data-aos="fade-down" class="para2">Student at <a class = "lineswipe cornelllineswipe" href = "https://www.infosci.cornell.edu" target="_blank">Cornell</a>, Incoming Product Designer at <a class = "lineswipe facebooklineswipe" href = "https://facebook.design" target="_blank">Facebook</a></h3>
+            </div>
+            <div id = "work"></div>
+        </div>
+
+        <h4 id="myProjects"><span>My Projects</span></h4>
+
+        <!-------------------Projects------------------->
+        <div class="grid">
+            <div class="image-container">
+                <img src="images/facebookWatch.png" alt="facebook watch img"/>
+                <a class="overlay facebook-watch-overlay" href="facebook-watch.html">
+                    <h3>Facebook Watch</h3>
+                </a>
+                <h4 class="facebookblue mobile-no-hover">Facebook Watch</h4>
+            </div>
+            <div class="image-container">
+                <img src="images/eater.jpg" alt="eater img"/>
+                <a class="overlay eater-overlay" href="eater.html">
+                    <h3>Eater App</h3>
+                </a>
+                <h4 class="pink mobile-no-hover">Eater App</h4>
+            </div>
+            <!--
+<div class="image-container">
+<img src="images/explornell.jpg" alt="explornell img"/>
+<a class="overlay explornell-overlay" href="explornell.html">
+<h3>Explornell</h3>
+</a>
+<h4 class="purple mobile-no-hover">Explornell</h4>
+</div>
+-->
+            <div class="image-container">
+                <img src="images/instagram.jpg" alt="instagram img"/>
+                <a class="overlay instagram-overlay" href="https://blog.usejournal.com/instagram-concept-hashtag-filters-253708c35bd6" target="_blank">
+                    <h3>Instagram Hashtag Filters</h3>
+                </a>
+                <h4 class="orange mobile-no-hover">Instagram Hashtag Filters</h4>
+            </div>
+            <div class="image-container">
+                <img src="images/uplift.jpg" alt="uplift img"/>
+                <a class="overlay uplift-overlay" href="uplift.html"> 
+                    <h3>Uplift</h3>
+                </a>   
+                <h4 class="yellow mobile-no-hover">Uplift</h4>
+
+            </div>
+            <div class="image-container">
+                <img src="images/cuReviews.jpg" alt="cuReviews img"/>
+                <a class="overlay cureviews-overlay" href="https://www.cureviews.org/" target="_blank"> 
+                    <h3>CU Reviews</h3>
+                </a>
+                <h4 class="blue mobile-no-hover">CU Reviews</h4>
+            </div>
+            <div class="image-container">
+                <img src="images/dailyUI.png" alt="dailyUI img"/>
+                <a class="overlay dailyui-overlay" href="dailyui.html"> 
+                    <h3>Daily UI Challenge</h3>
+                </a>    
+                <h4 class="green mobile-no-hover">Daily UI Challenge</h4>
+            </div>
+        </div>
+        <!-------------------Footer------------------->
+        <div class="footer">
+            <h4 class="line blueline"><a id="mailto" href="mailto:jnp49@cornell.edu"> 👋 Let's Get In Touch!</a></h4>
+            <div class="social">                
+                <a href="https://www.linkedin.com/in/jessicaprague/" target="_blank"> <img class="icon" src="images/linkedin.png" alt="linkedin"/> </a>
+                <a href="https://medium.com/@jessicaprague/" target="_blank"> <img class="icon" src="images/medium.png" alt="medium"/> </a>
+                <a href="https://twitter.com/jessicaprague" target="_blank"> <img class="icon" src="images/twitter.png" alt="twitter"/> </a>
+                <a href="https://www.instagram.com/jesseprague/" target="_blank"> <img class="icon" src="images/instagramlogo.png" alt="instagram"/> </a>
+
+            </div>
+            <h6 class="name"><span id="blueStar">★</span> DESIGNED AND CODED WITH <span class="love">LOVE</span> BY JESSICA PRAGUE <span id="blueStar">★</span></h6>
+        </div>
+        <!-------------------Scroll To Top------------------->
+        <a href="#top" aria-label="scroll to top" class="scroll-to-top"></a>
+        
+        <!-------------------AOS ANIMATIONS------------------->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>
