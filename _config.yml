@@ -1,3 +1,4 @@
+theme: jekyll-theme-cayman
 <!-------------------Index------------------->
 
 <!DOCTYPE html>
@@ -31,5 +32,3 @@
         <!-------------------Javascript------------------->
         <script src="js/jquery-3.4.1.min.js"></script>
         <script src="js/parallax.min.js"></script>
-
-theme: jekyll-theme-cayman
